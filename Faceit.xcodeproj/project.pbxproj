@@ -12,6 +12,7 @@
 		353C20F221903AEC00B653FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353C20F021903AEC00B653FD /* Main.storyboard */; };
 		353C20F421903AEE00B653FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353C20F321903AEE00B653FD /* Assets.xcassets */; };
 		353C20F721903AEE00B653FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353C20F521903AEE00B653FD /* LaunchScreen.storyboard */; };
+		353C210121903BB900B653FD /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C210021903BB900B653FD /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		353C20F321903AEE00B653FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		353C20F621903AEE00B653FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		353C20F821903AEE00B653FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		353C210021903BB900B653FD /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		353C20EB21903AEC00B653FD /* Faceit */ = {
 			isa = PBXGroup;
 			children = (
-				353C20EC21903AEC00B653FD /* AppDelegate.swift */,
+				353C210021903BB900B653FD /* FaceView.swift */,
+				353C20F821903AEE00B653FD /* Info.plist */,
 				353C20EE21903AEC00B653FD /* ViewController.swift */,
 				353C20F021903AEC00B653FD /* Main.storyboard */,
-				353C20F321903AEE00B653FD /* Assets.xcassets */,
-				353C20F521903AEE00B653FD /* LaunchScreen.storyboard */,
-				353C20F821903AEE00B653FD /* Info.plist */,
+				353C20FF21903B4500B653FD /* Supporting Files */,
 			);
 			path = Faceit;
+			sourceTree = "<group>";
+		};
+		353C20FF21903B4500B653FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				353C20EC21903AEC00B653FD /* AppDelegate.swift */,
+				353C20F321903AEE00B653FD /* Assets.xcassets */,
+				353C20F521903AEE00B653FD /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				353C20EF21903AEC00B653FD /* ViewController.swift in Sources */,
 				353C20ED21903AEC00B653FD /* AppDelegate.swift in Sources */,
+				353C210121903BB900B653FD /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
