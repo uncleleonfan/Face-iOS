@@ -12,13 +12,25 @@ import UIKit
 class FaceView: UIView {
     
     @IBInspectable
-    var scale: CGFloat = 0.9
+    var scale: CGFloat = 0.9 {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
-    var eyeOpen: Bool = false
+    var eyeOpen: Bool = false {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
-    var mouthCurvature : CGFloat = 1
+    var mouthCurvature : Double = -1 {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
 //    override func draw(_ rect: CGRect) {
 //        let skullRadius = min(bounds.size.width, bounds.size.height) / 2 * scale
@@ -46,7 +58,7 @@ class FaceView: UIView {
             height: mouthHeight)
 //        let path = UIBezierPath(rect: mouthRect)
         
-        let smallOffset = max(-1, min(mouthCurvature, 1)) * mouthRect.height
+        let smallOffset = CGFloat(max(-1, min(mouthCurvature, 1))) * mouthRect.height
         
         let start = CGPoint(x: mouthRect.minX, y: mouthRect.midY)
         let end = CGPoint(x: mouthRect.maxX, y: mouthRect.midY)
@@ -115,5 +127,15 @@ class FaceView: UIView {
         static let skullRadiusToMouthOffset: CGFloat = 3
     }
     
+    @objc
+    func changeScale(byReactingTo pinchRecognizer: UIPinchGestureRecognizer) {
+        switch pinchRecognizer.state {
+        case .changed, .ended:
+            scale *= pinchRecognizer.scale
+            pinchRecognizer.scale = 1
+        default:
+            break
+        }
+    }
     
 }

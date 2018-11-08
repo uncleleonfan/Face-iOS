@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35294065219168A000362D3E /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35294064219168A000362D3E /* FacialExpression.swift */; };
 		353C20ED21903AEC00B653FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C20EC21903AEC00B653FD /* AppDelegate.swift */; };
 		353C20EF21903AEC00B653FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C20EE21903AEC00B653FD /* ViewController.swift */; };
 		353C20F221903AEC00B653FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353C20F021903AEC00B653FD /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35294064219168A000362D3E /* FacialExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		353C20E921903AEC00B653FD /* Faceit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faceit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		353C20EC21903AEC00B653FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		353C20EE21903AEC00B653FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		353C20EB21903AEC00B653FD /* Faceit */ = {
 			isa = PBXGroup;
 			children = (
+				35294064219168A000362D3E /* FacialExpression.swift */,
 				353C210021903BB900B653FD /* FaceView.swift */,
 				353C20F821903AEE00B653FD /* Info.plist */,
 				353C20EE21903AEC00B653FD /* ViewController.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				353C20EF21903AEC00B653FD /* ViewController.swift in Sources */,
+				35294065219168A000362D3E /* FacialExpression.swift in Sources */,
 				353C20ED21903AEC00B653FD /* AppDelegate.swift in Sources */,
 				353C210121903BB900B653FD /* FaceView.swift in Sources */,
 			);
